@@ -1,0 +1,19 @@
+.site-header {
+    inset: 0 0 auto 0;
+    height: 8rem;
+    background-color: $off-white;
+    border-bottom: 1rem solid $primary-color;
+
+    &__logobox {
+        color: $secondary-color-dark;
+
+        & h2 {
+            margin-left: -35rem;
+            color: #000;
+        }
+    }
+
+    &__nav {
+        margin-left: 3rem;
+    }
+}

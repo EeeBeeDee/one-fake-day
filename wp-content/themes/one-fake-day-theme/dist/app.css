@@ -27,6 +27,17 @@ body {
   overflow-x: hidden !important;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .primary-color {
   color: #4ecca3 !important;
 }
@@ -49,4 +60,21 @@ body {
 
 .primary-bg-light {
   background-color: #76d7b8;
+}
+
+.site-header {
+  inset: 0 0 auto 0;
+  height: 8rem;
+  background-color: #FFFCE5;
+  border-bottom: 1rem solid #4ecca3;
+}
+.site-header__logobox {
+  color: #998100;
+}
+.site-header__logobox h2 {
+  margin-left: -35rem;
+  color: #000;
+}
+.site-header__nav {
+  margin-left: 3rem;
 }
