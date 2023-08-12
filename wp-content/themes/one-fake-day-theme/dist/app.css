@@ -1,1 +1,52 @@
+@import url(https://fonts.googleapis.com/css2?family=Figtree&display=swap);
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0%;
+  box-sizing: inherit;
+}
 
+html {
+  width: 100vw;
+  font-size: 62.5%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  font-family: "Figtree", sans-serif;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.overflow-wrapper {
+  width: 100vw;
+  overflow-x: hidden !important;
+}
+
+.primary-color {
+  color: #67DB5C !important;
+}
+
+.primary-color-dark {
+  color: #368F2E;
+}
+
+.primary-color-darker {
+  color: #17421E;
+}
+
+.primary-bg {
+  background-color: #67DB5C;
+}
+
+.primary-bg-dark {
+  background-color: #368F2E;
+}
+
+.primary-bg-darker {
+  background-color: #17421E;
+}
