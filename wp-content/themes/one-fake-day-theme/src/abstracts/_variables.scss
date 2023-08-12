@@ -1,5 +1,11 @@
-$primary-color: #67DB5C;
-$primary-color-dark: #368F2E;
-$primary-color-darker: #17421E;
+$primary-color: #4ecca3;
+$primary-color-dark: #34b38a;
+$primary-color-light: #76d7b8;
+
+$secondary-color: #ffd700;
+$secondary-color-dark: darken($secondary-color, 20%);
+$secondary-color-light: lighten($secondary-color, 20%);
+
+$off-white: #FFFCE5;
 
 $grey-color: #d9d9d9;

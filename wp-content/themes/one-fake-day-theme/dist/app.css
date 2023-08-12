@@ -28,25 +28,25 @@ body {
 }
 
 .primary-color {
-  color: #67DB5C !important;
+  color: #4ecca3 !important;
 }
 
 .primary-color-dark {
-  color: #368F2E;
+  color: #34b38a;
 }
 
-.primary-color-darker {
-  color: #17421E;
+.primary-color-light {
+  color: #76d7b8;
 }
 
 .primary-bg {
-  background-color: #67DB5C;
+  background-color: #4ecca3;
 }
 
 .primary-bg-dark {
-  background-color: #368F2E;
+  background-color: #34b38a;
 }
 
-.primary-bg-darker {
-  background-color: #17421E;
+.primary-bg-light {
+  background-color: #76d7b8;
 }
