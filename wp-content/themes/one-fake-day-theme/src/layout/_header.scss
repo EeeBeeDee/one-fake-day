@@ -1,12 +1,20 @@
 .site-header {
-    inset: 0 0 auto 0;
-    height: 8rem;
+    position: fixed;
+    top: 32px;
+    left: 0;
+    height: auto;
+    width: 100%;
     background-color: $off-white;
-    border-bottom: 1rem solid $primary-color;
+    border-bottom: 1.2rem solid $primary-color;
+    
+
+    &__flex {
+        top: 0;
+    }
 
     &__logobox {
         color: $secondary-color-dark;
-
+        margin: 1rem 0;
         & h2 {
             margin-left: -35rem;
             color: #000;
@@ -15,5 +23,52 @@
 
     &__nav {
         margin-left: 3rem;
+        height: 100%;
+
+        & li {
+            display: block;
+            height: 100%;
+        }
+
+        & li a {
+            padding: 3rem 2rem;
+            text-transform: uppercase;
+            font-size: 1.4rem;
+            height: 100%;
+
+            &:hover{
+                color: $secondary-color-dark;
+            }
+        }
+    }
+    
+    &__search {
+        cursor: pointer;
+        padding: 0.5rem 2rem;
+
+        i {
+            color: $primary-color-dark;
+        }
+
+        &:hover i {
+            color: $primary-color;
+        }
+    }
+
+    &__dropdown {
+        background-color: $off-white;
+        height: 0;
+        width: 200vw;
+        margin-left: -50vw;
+        transition: all 0.3s ease-in;
+    
+        &.active {
+        transition: all  0.3s ease-in;
+        height: 30rem;
+        }
+    }
+
+    &__dropdown-menu {
+        
     }
 }

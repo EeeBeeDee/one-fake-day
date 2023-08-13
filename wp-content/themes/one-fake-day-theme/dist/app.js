@@ -7,7 +7,25 @@
   \********************/
 /***/ (() => {
 
-
+var dropdownLinks = document.querySelectorAll('.dropdown-links');
+var header = document.getElementById('header');
+var dropdown = document.getElementById('dropdown-background');
+dropdownLinks.forEach(function (item) {
+  item.addEventListener('mouseover', function () {
+    dropdown.classList.add('active');
+    console.log('Hello');
+  });
+  item.addEventListener('mouseleave', function () {
+    dropdown.classList.remove('active');
+    console.log('Hello');
+  });
+});
+dropdown.addEventListener('mouseover', function () {
+  dropdown.classList.add('active');
+});
+dropdown.addEventListener('mouseleave', function () {
+  dropdown.classList.remove('active');
+});
 
 /***/ }),
 

@@ -63,13 +63,20 @@ a {
 }
 
 .site-header {
-  inset: 0 0 auto 0;
-  height: 8rem;
+  position: fixed;
+  top: 32px;
+  left: 0;
+  height: auto;
+  width: 100%;
   background-color: #FFFCE5;
-  border-bottom: 1rem solid #4ecca3;
+  border-bottom: 1.2rem solid #4ecca3;
+}
+.site-header__flex {
+  top: 0;
 }
 .site-header__logobox {
   color: #998100;
+  margin: 1rem 0;
 }
 .site-header__logobox h2 {
   margin-left: -35rem;
@@ -77,4 +84,39 @@ a {
 }
 .site-header__nav {
   margin-left: 3rem;
+  height: 100%;
+}
+.site-header__nav li {
+  display: block;
+  height: 100%;
+}
+.site-header__nav li a {
+  padding: 3rem 2rem;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  height: 100%;
+}
+.site-header__nav li a:hover {
+  color: #998100;
+}
+.site-header__search {
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+}
+.site-header__search i {
+  color: #34b38a;
+}
+.site-header__search:hover i {
+  color: #4ecca3;
+}
+.site-header__dropdown {
+  background-color: #FFFCE5;
+  height: 0;
+  width: 200vw;
+  margin-left: -50vw;
+  transition: all 0.3s ease-in;
+}
+.site-header__dropdown.active {
+  transition: all 0.3s ease-in;
+  height: 30rem;
 }
