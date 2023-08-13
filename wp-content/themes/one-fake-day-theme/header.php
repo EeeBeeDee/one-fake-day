@@ -19,14 +19,14 @@
                     </a>
                 </div>
                 <ul class="site-header__nav d-flex h-100 align-items-center">
-                    <li>
+                <li>
                         <div id="" class="site-header__dropdown-links">
                             <a href="#">Real Weddings</a>
                             <div class="site-header__dropdown-menu">
                                 <div class="container">
-                                   <div class="row">
-                                    <div class="col-4 menu-border">
-                                        <ul class="site-header__sub-menu">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <ul class="site-header__sub-menu menu-border">
                                            <li class="site-header__sub-links bold">
                                                 <a href="">More Wedding inspiration</a>
                                             </li> 
@@ -47,8 +47,8 @@
                                             </li> 
                                         </ul>
                                     </div>
-                                    <div class="col-4 menu-border">
-                                    <ul class="site-header__sub-menu">
+                                    <div class="col-4">
+                                    <ul class="site-header__sub-menu menu-border">
                                            <li class="site-header__sub-links bold">
                                                 <a href="">Real Weddings</a>
                                             </li> 
@@ -72,8 +72,8 @@
                                             </li> 
                                         </ul>
                                     </div>
-                                    <div class="col-4 menu-border">
-                                    <ul class="site-header__sub-menu">
+                                    <div class="col-4">
+                                    <ul class="site-header__sub-menu menu-border">
                                            <li class="site-header__sub-links bold">
                                                 <a href="">More Wedding inspiration</a>
                                             </li> 
@@ -101,10 +101,74 @@
                     </li>
                     <li>
                         <div id="" class="site-header__dropdown-links">
-                            <a href="#">Dressses</a>
+                            <a href="#">Dresses</a>
                             <div class="site-header__dropdown-menu">
                                 <div class="container">
-                                   
+                                   <div class="row">
+                                    <div class="col-4">
+                                        <ul class="site-header__sub-menu menu-border">
+                                           <li class="site-header__sub-links bold">
+                                                <a href="">Wedding Style</a>
+                                            </li> 
+                                           <li class="site-header__sub-links">
+                                                <a href="">Wedding Dress Gallery</a>
+                                            </li> 
+                                           <li class="site-header__sub-links">
+                                                <a href="">Bridesmaids Style Ideas</a>
+                                            </li> 
+                                           <li class="site-header__sub-links">
+                                                <a href="">Groom Style</a>
+                                            </li> 
+                                           <li class="site-header__sub-links">
+                                                <a href="">Mother of the Bride</a>
+                                            </li>  
+                                        </ul>
+                                    </div>
+                                    <div class="col-4">
+                                    <ul class="site-header__sub-menu menu-border">
+                                           <li class="site-header__sub-links bold">
+                                                <a href="">Find The Wedding Dress</a>
+                                            </li> 
+                                           <li class="site-header__sub-links">
+                                                <a href="">Irish Bridal Boutiques</a>
+                                            </li> 
+                                           <li class="site-header__sub-links">
+                                                <a href="">Bridal Designers</a>
+                                            </li> 
+                                           <li class="site-header__sub-links">
+                                                <a href="">Bespoke Bridal Designers</a>
+                                            </li> 
+                                           <li class="site-header__sub-links">
+                                                <a href="">Guides For Choosing a Dress</a>
+                                            </li> 
+                                           <li class="site-header__sub-links">
+                                                <a href="">Engagement & Proposals</a>
+                                            </li> 
+                                        </ul>
+                                    </div>
+                                    <div class="col-4">
+                                    <ul class="site-header__sub-menu menu-border">
+                                           <li class="site-header__sub-links bold">
+                                                <a href="">Wedding Looks</a>
+                                            </li> 
+                                           <li class="site-header__sub-links">
+                                                <a href="">Hair & Makeup</a>
+                                            </li> 
+                                           <li class="site-header__sub-links">
+                                                <a href="">Shoes</a>
+                                            </li> 
+                                           <li class="site-header__sub-links">
+                                                <a href="">Accessories</a>
+                                            </li> 
+                                           <li class="site-header__sub-links">
+                                                <a href="">Wedding Guest</a>
+                                            </li> 
+                                           <li class="site-header__sub-links">
+                                                <a href="">Flower Girls & Page Boys</a>
+                                            </li> 
+                                        </ul>
+                                    </div>
+                                   </div>
                                 </div>
                             </div>
                         </div>
