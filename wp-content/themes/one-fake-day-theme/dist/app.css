@@ -125,7 +125,7 @@ a {
   position: fixed;
   opacity: 0;
   left: 0;
-  top: 10%;
+  top: 10rem;
   width: 100vw;
   transition: all 0.5s ease-in-out;
 }
@@ -145,8 +145,41 @@ a {
 }
 .site-header__sub-links.bold a {
   font-weight: 900;
+  text-transform: uppercase !important;
 }
 
 .menu-border {
   border-left: 2px solid #998100;
+}
+
+.site-footer {
+  position: absolute;
+  bottom: 0;
+  background-color: #FFFCE5;
+  padding: 3rem 0;
+  width: 100vw;
+  border-top: 1.2rem solid #998100;
+}
+.site-footer__logobox {
+  color: #998100;
+  position: relative;
+}
+.site-footer__logobox a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: scale(2) translate(50%, -50%);
+}
+.site-footer__nav {
+  transform: translateX(-600%);
+}
+.site-footer__nav-links {
+  margin: 2rem 0;
+}
+.site-footer__nav-links a {
+  font-size: 1.4rem;
+  font-weight: 700 !important;
+}
+.site-footer__nav-links a:hover {
+  color: #998100;
 }

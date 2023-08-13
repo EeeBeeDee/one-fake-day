@@ -1,0 +1,38 @@
+.site-footer {
+    position: absolute;
+    bottom: 0;
+    background-color: $off-white;
+    padding: 3rem 0;
+    width: 100vw;
+    border-top: 1.2rem solid $secondary-color-dark;
+
+    &__logobox {
+        color: $secondary-color-dark;
+        position: relative;
+
+        & a {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: scale(2) translate(50%, -50%);
+
+        }
+    }
+
+    &__nav {
+        transform: translateX(-600%);
+    }
+
+    &__nav-links {
+        margin: 2rem 0;
+
+        & a {
+            font-size: 1.4rem;
+            font-weight: 700 !important;
+
+            &:hover {
+                color: $secondary-color-dark;
+            }
+        }
+    }
+}

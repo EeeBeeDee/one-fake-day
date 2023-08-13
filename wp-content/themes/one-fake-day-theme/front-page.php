@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 
-    <div>
-        <h1>hello</h1>
+    <div style="height: 200vh;">
     </div>
 
 <?php get_footer(); ?>
