@@ -20,17 +20,87 @@
                 </div>
                 <ul class="site-header__nav d-flex h-100 align-items-center">
                     <li>
-                        <div id="" class="dropdown-links">
+                        <div id="" class="site-header__dropdown-links">
                             <a href="#">Real Weddings</a>
                             <div class="site-header__dropdown-menu">
                                 <div class="container">
-                                   
+                                   <div class="row">
+                                    <div class="col-4 menu-border">
+                                        <ul class="site-header__sub-menu">
+                                           <li class="site-header__sub-links bold">
+                                                <a href="">More Wedding inspiration</a>
+                                            </li> 
+                                           <li class="site-header__sub-links">
+                                                <a href="">Small Weddings</a>
+                                            </li> 
+                                           <li class="site-header__sub-links">
+                                                <a href="">City Weddings</a>
+                                            </li> 
+                                           <li class="site-header__sub-links">
+                                                <a href="">LGBTQ+ Weddings</a>
+                                            </li> 
+                                           <li class="site-header__sub-links">
+                                                <a href="">Mature Real Weddings</a>
+                                            </li> 
+                                           <li class="site-header__sub-links">
+                                                <a href="">Celebrity Weddings</a>
+                                            </li> 
+                                        </ul>
+                                    </div>
+                                    <div class="col-4 menu-border">
+                                    <ul class="site-header__sub-menu">
+                                           <li class="site-header__sub-links bold">
+                                                <a href="">Real Weddings</a>
+                                            </li> 
+                                           <li class="site-header__sub-links">
+                                                <a href="">Irish Real Weddings</a>
+                                            </li> 
+                                           <li class="site-header__sub-links">
+                                                <a href="">Northern Irish Weddings</a>
+                                            </li> 
+                                           <li class="site-header__sub-links">
+                                                <a href="">UK Real Weddings</a>
+                                            </li> 
+                                           <li class="site-header__sub-links">
+                                                <a href="">Weddings Abroad</a>
+                                            </li> 
+                                           <li class="site-header__sub-links">
+                                                <a href="">Real Wedding Videos</a>
+                                            </li> 
+                                           <li class="site-header__sub-links">
+                                                <a href="">Styled Shoes</a>
+                                            </li> 
+                                        </ul>
+                                    </div>
+                                    <div class="col-4 menu-border">
+                                    <ul class="site-header__sub-menu">
+                                           <li class="site-header__sub-links bold">
+                                                <a href="">More Wedding inspiration</a>
+                                            </li> 
+                                           <li class="site-header__sub-links">
+                                                <a href="">Small Weddings</a>
+                                            </li> 
+                                           <li class="site-header__sub-links">
+                                                <a href="">City Weddings</a>
+                                            </li> 
+                                           <li class="site-header__sub-links">
+                                                <a href="">LGBTQ+ Weddings</a>
+                                            </li> 
+                                           <li class="site-header__sub-links">
+                                                <a href="">Mature Real Weddings</a>
+                                            </li> 
+                                           <li class="site-header__sub-links">
+                                                <a href="">Celebrity Weddings</a>
+                                            </li> 
+                                        </ul>
+                                    </div>
+                                   </div>
                                 </div>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <div id="" class="dropdown-links">
+                        <div id="" class="site-header__dropdown-links">
                             <a href="#">Dressses</a>
                             <div class="site-header__dropdown-menu">
                                 <div class="container">
@@ -40,7 +110,7 @@
                         </div>
                     </li>
                     <li>
-                        <div id="" class="dropdown-links">
+                        <div id="" class="site-header__dropdown-links">
                             <a href="#">Ideas & Planning</a>
                             <div class="site-header__dropdown-menu">
                                 <div class="container">
@@ -50,7 +120,7 @@
                         </div>
                     </li>
                     <li>
-                        <div id="" class="dropdown-links">
+                        <div id="" class="site-header__dropdown-links">
                             <a href="#">Honeymoons</a>
                             <div class="site-header__dropdown-menu">
                                 <div class="container">
@@ -60,7 +130,7 @@
                         </div>
                     </li>
                     <li>
-                        <div id="" class="dropdown-links">
+                        <div id="" class="site-header__dropdown-links">
                             <a href="#">Suppliers</a>
                             <div class="site-header__dropdown-menu">
                                 <div class="container">

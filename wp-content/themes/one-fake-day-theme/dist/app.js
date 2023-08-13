@@ -7,12 +7,16 @@
   \********************/
 /***/ (() => {
 
-var dropdownLinks = document.querySelectorAll('.dropdown-links');
+var dropdownLinks = document.querySelectorAll('.site-header__dropdown-links');
 var header = document.getElementById('header');
 var dropdown = document.getElementById('dropdown-background');
-dropdownLinks.forEach(function (item) {
+var subMenus = document.querySelectorAll('.site-header__dropdown-menu');
+dropdownLinks.forEach(function (item, idx) {
   item.addEventListener('mouseover', function () {
     dropdown.classList.add('active');
+    menu = subMenus[idx];
+    menu.style.visibility = 'visible';
+    menu.classList.add('show');
     console.log('Hello');
   });
   item.addEventListener('mouseleave', function () {

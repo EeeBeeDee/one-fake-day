@@ -60,15 +60,57 @@
         height: 0;
         width: 200vw;
         margin-left: -50vw;
-        transition: all 0.3s ease-in;
+        transition: all 0.3s ease-in-out;
     
         &.active {
-        transition: all  0.3s ease-in;
+        transition: all  0.3s ease-in-out;
         height: 30rem;
         }
     }
 
-    &__dropdown-menu {
-        
+    &__dropdown-links {
+        // position: relative;
     }
+
+    &__dropdown-menu {
+        visibility: hidden;
+        position: fixed;
+        opacity: 0;
+        left: 0;
+        top: 10%;
+        width: 100vw;
+        transition: all 0.5s ease-in-out;
+        
+        &.show {
+            opacity: 1;
+            transition: all 0.5s ease-in-out;
+            
+        }
+
+        & .container {
+            padding: 0 20rem;
+        }
+    }
+
+    &__sub-menu {
+
+    }
+
+    &__sub-links {
+        margin: 2rem 2rem !important;
+         
+        
+        & a {
+            text-transform: none !important;
+            padding: 0 !important;
+        }
+
+        &.bold a {
+            font-weight: 900;
+        }
+    }
+}
+
+.menu-border {
+    border-left: 2px solid $secondary-color-dark;
 }
