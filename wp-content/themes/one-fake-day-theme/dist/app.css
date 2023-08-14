@@ -91,6 +91,7 @@ a {
   font-size: 2rem;
   padding: 0.5rem 7rem;
   transition: all 0.3s;
+  text-align: center;
 }
 .btn--white {
   border: 2px solid #fff;
@@ -98,6 +99,14 @@ a {
 .btn--white:hover {
   background-color: #fff;
   color: #4ecca3;
+}
+.btn--primary {
+  color: #4ecca3;
+  border: 2px solid #4ecca3;
+}
+.btn--primary:hover {
+  background-color: #4ecca3;
+  color: #fff;
 }
 
 .post-card {
@@ -245,6 +254,10 @@ a {
   border-left: 2px solid #998100;
 }
 
+.header-spacer {
+  height: 15rem;
+}
+
 .site-footer {
   position: absolute;
   bottom: 0;
@@ -370,6 +383,40 @@ a {
 }
 .site-footer__social li:nth-child(even) a:hover span {
   background-color: #4ecca3;
+}
+
+.post__title {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 100;
+  line-height: 7rem;
+  margin: 0 10rem 3rem;
+}
+.post__content {
+  margin: 3rem 10rem;
+}
+.post__content .btn {
+  margin: 3rem 10rem;
+}
+.post__img-container {
+  width: 100%;
+  max-height: 30vh;
+  overflow: hidden;
+}
+.post__img-container img {
+  width: 100%;
+  max-height: 30vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.post p {
+  font-size: 2rem;
+  word-spacing: 0.5rem;
+  text-align: justify;
+  margin: 0 3rem;
+}
+.post img {
+  margin: 3rem auto;
 }
 
 .ads-logo {

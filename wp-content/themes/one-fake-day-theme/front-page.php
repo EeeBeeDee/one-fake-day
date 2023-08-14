@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-<div class="margin-block-md"></div>
-
 <div class="container">
     <div class="row">
         <div class="col-9">
@@ -19,7 +17,9 @@
                     $loopCount++ ?>
                     <div class="col-6">
                         <div class="post-card">
-                            <img class="post-card__img" src="<?php echo get_the_post_thumbnail(); ?>" alt="">
+                            <a href="<?php the_permalink() ?>">
+                                <img class="post-card__img" src="<?php echo get_the_post_thumbnail(); ?>" alt="">
+                            </a>
                             <div class="post-card__infobox">
                                 <span class="post-card__category">
                                     <a href=""><?php the_category(); ?></a>
@@ -51,10 +51,7 @@
             </div>
         </div>
         <div class="col-3">
-            <div class="ads-container">
-                <div class="ads-logo"><?php get_template_part('/template-parts/logo') ?></div>
-                <img src="<?php echo get_theme_file_uri("/img/ads.png") ?>" alt="" srcset="">
-            </div>
+            <?php get_template_part('template-parts/ads-container') ?>
         </div>
     </div>
 </div>
