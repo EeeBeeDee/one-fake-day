@@ -68,15 +68,15 @@ a {
 
 .post-card {
   position: relative;
-  margin: 0 3rem 5rem;
+  margin: 0 6rem 5rem;
   height: 50rem;
   background-color: #ffd700;
   overflow: hidden;
   border: 2px solid #998100;
 }
 .post-card__img {
-  -o-object-fit: fill;
-     object-fit: fill;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: relative;
   outline: 3px dotted #998100;
   outline-offset: -5.3rem;
@@ -115,6 +115,20 @@ a {
 }
 .post-card__title {
   text-align: center;
+}
+.post-card__title :hover {
+  color: #998100;
+}
+
+.banner-ad {
+  background-color: #4ecca3;
+  height: 13rem;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .site-header {
