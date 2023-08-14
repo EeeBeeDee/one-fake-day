@@ -1,5 +1,59 @@
 .post-card {
-    margin: 0 3rem;
+    position: relative;
+    margin: 0 3rem 5rem;
     height: 50rem;
     background-color: $secondary-color;
+    overflow: hidden;
+    border: 2px solid $secondary-color-dark;
+
+    
+    &__img {
+        object-fit: fill;
+        position: relative;
+        outline: 3px dotted $secondary-color-dark;
+        outline-offset: -5.3rem;
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+        transition: all 1s ease-in-out;
+        
+        
+        
+        &:hover {
+            filter: brightness(30%);
+            transform: scale(1.5);
+
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__infobox {
+        background-color: $off-white;
+        position: absolute;
+        bottom: 5%;
+        left: 10%;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid $secondary-color-dark;
+        z-index: 10;
+    }
+
+    &__category {
+        color: $primary-color-dark;
+        font-size: 1.5rem;
+        margin: 1rem 0;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+
+    &__title {
+        text-align: center;
+    }
 }
