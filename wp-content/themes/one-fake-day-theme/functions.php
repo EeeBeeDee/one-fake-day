@@ -9,7 +9,15 @@
         wp_enqueue_style('style');
 
         wp_enqueue_script('app', get_theme_file_uri('/dist/app.js'), [], '1.0', true);
-    }
+    };
 
-    add_action('wp_enqueue_scripts', 'scripts')
+    add_action('wp_enqueue_scripts', 'scripts');
+
+    function post_features() {
+        add_theme_support('title-tag');
+        add_theme_support('post-thumbnails');
+    }
+    
+    
+    add_action('after_setup_theme', 'post_features');
 ?>

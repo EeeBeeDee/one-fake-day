@@ -62,6 +62,16 @@ a {
   background-color: #76d7b8;
 }
 
+.margin-block-md {
+  height: 20rem;
+}
+
+.post-card {
+  margin: 0 3rem;
+  height: 50rem;
+  background-color: #ffd700;
+}
+
 .site-header {
   position: fixed;
   top: 32px;

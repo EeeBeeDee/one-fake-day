@@ -75,19 +75,19 @@
                                     <div class="col-4">
                                     <ul class="site-header__sub-menu menu-border">
                                            <li class="site-header__sub-links bold">
-                                                <a href="">More Wedding inspiration</a>
+                                                <a href="">Weddings By Season</a>
                                             </li> 
                                            <li class="site-header__sub-links">
-                                                <a href="">Small Weddings</a>
+                                                <a href="">Summer Weddings</a>
                                             </li> 
                                            <li class="site-header__sub-links">
-                                                <a href="">City Weddings</a>
+                                                <a href="">Winter Weddings</a>
                                             </li> 
                                            <li class="site-header__sub-links">
-                                                <a href="">LGBTQ+ Weddings</a>
+                                                <a href="">Spring Weddings</a>
                                             </li> 
                                            <li class="site-header__sub-links">
-                                                <a href="">Mature Real Weddings</a>
+                                                <a href="">Autumn Weddings</a>
                                             </li> 
                                            <li class="site-header__sub-links">
                                                 <a href="">Celebrity Weddings</a>
