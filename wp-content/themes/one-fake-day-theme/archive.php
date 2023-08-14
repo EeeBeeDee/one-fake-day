@@ -1,8 +1,7 @@
 <?php
 get_header();
 
-while (have_posts()) {
-    the_post(); ?>
+ ?>
 
     <div class="container">
         <div class="archive">
@@ -12,14 +11,43 @@ while (have_posts()) {
             <div class="row">
                 <div class="col-9">
                     <div class="archive__content">
-                        <div class="post__img-container">
-                            <img src=<?php echo get_the_post_thumbnail();  
-                            ?>>
+                        <div class="row">
+                            <?php
+                            $loopCount = 0;
+                            while (have_posts()) {
+                                the_post();
+                                $loopCount++ ?>
+                                <div class="col-6">
+                                    <div class="post-card">
+                                        <a href="<?php the_permalink() ?>">
+                                            <img class="post-card__img" src="<?php echo get_the_post_thumbnail(); ?>" alt="">
+                                        </a>
+                                        <div class="post-card__infobox">
+                                            <span class="post-card__category">
+                                                <a href=""><?php the_category(); ?></a>
+                                            </span>
+                                            <h2 class="post-card__title p-3">
+                                                <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <?php
+
+                                if ($loopCount == 6 or $loopCount == 12) {
+                                ?>
+                                    <div class="col-12">
+                                        <div class="banner-ad banner-ad--primary">
+                                            <h2>Check out our latest venues</h2>
+                                            <button class="btn btn--white">Venues</button>
+                                        </div>
+                                    </div>
+                            <?php }
+                            }
+                            wp_reset_postdata();
+                            ?>
                         </div>
-                        <div class="btn btn--primary">
-                            <?php the_category() ?>
-                        </div>
-                        <?php the_content() ?>
                     </div>
                 </div>
                 <div class="col 3">
@@ -29,10 +57,10 @@ while (have_posts()) {
         </div>
     </div>
 
-   
+
     </div>
     <div style="height: 100vh;"></div>
-<?php }
+<?php 
 
 get_footer();
 

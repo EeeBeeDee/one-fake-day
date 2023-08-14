@@ -385,6 +385,15 @@ a {
   background-color: #4ecca3;
 }
 
+.archive__title {
+  text-align: center;
+  color: #4ecca3;
+  font-size: 5rem;
+  font-weight: 100;
+  line-height: 7rem;
+  margin: 0 10rem 3rem;
+}
+
 .ads-logo {
   color: #998100;
   margin-bottom: 4rem;
