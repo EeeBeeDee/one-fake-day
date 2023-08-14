@@ -7,10 +7,12 @@
 @import "base/typography";
 @import "base/utilities";
 
-@import "components/post-card";
 @import "components/banner-ad";
+@import "components/btn";
+@import "components/post-card";
 
 @import "layout/header";
 @import "layout/footer";
 
 @import "pages/single";
+@import "pages/front-page";

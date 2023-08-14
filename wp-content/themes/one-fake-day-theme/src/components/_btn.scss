@@ -1,0 +1,19 @@
+.btn {
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem 7rem;
+    transition: all 0.3s;
+    
+    &--white {
+        border: 2px solid #fff;
+
+        &:hover {
+            background-color: #fff;
+            color: $primary-color;
+        }
+        
+    }
+
+}
