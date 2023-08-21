@@ -2,14 +2,13 @@
 get_header();
 
  ?>
-
     <div class="container">
         <div class="archive">
             <h2 class="archive__title">
                 <?php echo get_the_archive_title(); ?>
             </h2>
             <div class="row">
-                <div class="col-9">
+                <div class="col-9 py-5">
                     <div class="archive__content">
                         <div class="row">
                             <?php
@@ -45,6 +44,7 @@ get_header();
                                     </div>
                             <?php }
                             }
+                            echo paginate_links();
                             wp_reset_postdata();
                             ?>
                         </div>

@@ -38,4 +38,13 @@
     }
     
     add_filter( 'get_the_archive_title', 'my_theme_archive_title' );
+
+    function university_map_key($api) {
+        $api['key'] = 'AIzaSyAUAki-fcJ5ncnATvqGrybpLmXGxkmrJwI';
+    
+        return $api;
+    }
+    
+    add_filter('acf/fields/google_map/api', 'university_map_key');
 ?>
+

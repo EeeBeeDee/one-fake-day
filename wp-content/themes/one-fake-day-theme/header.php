@@ -13,7 +13,7 @@
         <div class="container h-100">
             <div class="site-header__flex d-flex align-items-center justify-content-between h-100">
                 <div class="site-header__logobox d-flex align-items-center">
-                    <a class="d-flex align-items-center" href="#">
+                    <a class="d-flex align-items-center" href="<?php echo site_url(); ?>">
                         <?php get_template_part('template-parts/logo') ?>
                         <h2>One Fake Day</h2>
                     </a>
@@ -175,7 +175,7 @@
                     </li>
                     <li>
                         <div id="" class="site-header__dropdown-links">
-                            <a href="#">Ideas & Planning</a>
+                            <a href="<?php echo get_post_type_archive_link('venue') ?>">Venues</a>
                             <div class="site-header__dropdown-menu">
                                 <div class="container">
                                    

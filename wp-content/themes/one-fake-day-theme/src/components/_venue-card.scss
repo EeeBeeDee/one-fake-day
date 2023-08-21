@@ -1,4 +1,4 @@
-.post-card {
+.venue-card {
     position: relative;
     margin: 0 4rem 4rem;
     height: 50rem;
@@ -43,21 +43,15 @@
         z-index: 10;
     }
 
-    &__category {
-        color: $primary-color-dark;
-        font-size: 1.5rem;
-        margin: 1rem 0;
-
-        &:hover {
-            color: $primary-color;
-        }
-    }
-
     &__title {
         text-align: center;
 
         :hover {
             color: $secondary-color-dark;
         }
+    }
+
+    &__excerpt {
+        
     }
 }
