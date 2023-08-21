@@ -1,8 +1,15 @@
 .venue-archive {
 
     &__subtitle {
+        margin-bottom: 3rem;
         font-size: 1.8rem;
         letter-spacing: .3rem;
         text-align: center;
     }
+}
+
+.acf-map {
+    width: 90%;
+    height: 40rem;
+    padding: 0 3rem;
 }

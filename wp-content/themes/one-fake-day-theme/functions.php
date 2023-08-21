@@ -1,6 +1,7 @@
 <?php
     
     function scripts() {
+        wp_enqueue_script('google-map', '//maps.googleapis.com/maps/api/js?key=AIzaSyAUAki-fcJ5ncnATvqGrybpLmXGxkmrJwI' , NULL, '1.0', true);
         wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
         wp_register_style('bootstrap-custom', get_template_directory_uri() . '/dist/bootstrap-custom.css');
         wp_enqueue_style('bootstrap-custom');

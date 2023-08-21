@@ -7,6 +7,12 @@
   \********************/
 /***/ (() => {
 
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 var dropdownLinks = document.querySelectorAll('.site-header__dropdown-links');
 var header = document.getElementById('header');
 var dropdown = document.getElementById('dropdown-background');
@@ -39,6 +45,85 @@ dropdown.addEventListener('mouseleave', function () {
     menu.classList.remove('show');
   });
 });
+
+// Google map JS
+var GMap = /*#__PURE__*/function () {
+  function GMap() {
+    var _this = this;
+    _classCallCheck(this, GMap);
+    document.querySelectorAll(".acf-map").forEach(function (el) {
+      _this.new_map(el);
+    });
+  }
+  _createClass(GMap, [{
+    key: "new_map",
+    value: function new_map($el) {
+      var $markers = $el.querySelectorAll(".marker");
+      var args = {
+        zoom: 16,
+        center: new google.maps.LatLng(0, 0),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      };
+      var map = new google.maps.Map($el, args);
+      map.markers = [];
+      var that = this;
+
+      // add markers
+      $markers.forEach(function (x) {
+        that.add_marker(x, map);
+      });
+
+      // center map
+      this.center_map(map);
+    } // end new_map
+  }, {
+    key: "add_marker",
+    value: function add_marker($marker, map) {
+      var latlng = new google.maps.LatLng($marker.getAttribute("data-lat"), $marker.getAttribute("data-lng"));
+      var marker = new google.maps.Marker({
+        position: latlng,
+        map: map
+      });
+      map.markers.push(marker);
+
+      // if marker contains HTML, add it to an infoWindow
+      if ($marker.innerHTML) {
+        // create info window
+        var infowindow = new google.maps.InfoWindow({
+          content: $marker.innerHTML
+        });
+
+        // show info window when marker is clicked
+        google.maps.event.addListener(marker, "click", function () {
+          infowindow.open(map, marker);
+        });
+      }
+    } // end add_marker
+  }, {
+    key: "center_map",
+    value: function center_map(map) {
+      var bounds = new google.maps.LatLngBounds();
+
+      // loop through all markers and create bounds
+      map.markers.forEach(function (marker) {
+        var latlng = new google.maps.LatLng(marker.position.lat(), marker.position.lng());
+        bounds.extend(latlng);
+      });
+
+      // only 1 marker?
+      if (map.markers.length == 1) {
+        // set center of map
+        map.setCenter(bounds.getCenter());
+        map.setZoom(16);
+      } else {
+        // fit to bounds
+        map.fitBounds(bounds);
+      }
+    } // end center_map
+  }]);
+  return GMap;
+}();
+var googleMap = new GMap();
 
 /***/ }),
 

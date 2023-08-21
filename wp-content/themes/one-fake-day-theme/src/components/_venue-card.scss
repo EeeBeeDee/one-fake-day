@@ -1,7 +1,7 @@
 .venue-card {
     position: relative;
     margin: 0 4rem 4rem;
-    height: 50rem;
+    height: 45rem;
     background-color: $secondary-color;
     overflow: hidden;
     border: 2px solid $secondary-color-dark;
@@ -10,8 +10,6 @@
     &__img {
         object-fit: cover;
         position: relative;
-        outline: 3px dotted $secondary-color-dark;
-        outline-offset: -5.3rem;
         height: 100%;
         width: 100%;
         cursor: pointer;
@@ -30,21 +28,22 @@
     }
 
     &__infobox {
-        background-color: $off-white;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.8);
+        box-shadow: 0 -1rem 3rem rgba(0, 0, 0, 1);
         position: absolute;
-        bottom: 5%;
-        left: 10%;
-        width: 80%;
+        bottom: 0%;
+        width: 100%;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
-        border: 1px solid $secondary-color-dark;
         z-index: 10;
     }
 
     &__title {
-        text-align: center;
+        color: $secondary-color-dark;
+        margin-top: 2rem;
 
         :hover {
             color: $secondary-color-dark;
@@ -52,6 +51,9 @@
     }
 
     &__excerpt {
-        
+        color: $primary-color-dark;
+        text-align: end;
+        font-size: 1.5rem;
+        margin: 0 3rem 1rem;
     }
 }
