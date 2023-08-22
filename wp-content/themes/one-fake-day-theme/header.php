@@ -31,19 +31,19 @@
                                                 <a href="">More Wedding inspiration</a>
                                             </li> 
                                            <li class="site-header__sub-links">
-                                                <a href="">Small Weddings</a>
+                                                <a href="<?php echo site_url('category/small-weddings') ?>">Small Weddings</a>
                                             </li> 
                                            <li class="site-header__sub-links">
-                                                <a href="">City Weddings</a>
+                                                <a href="<?php echo site_url('category/city-weddings') ?>">City Weddings</a>
                                             </li> 
                                            <li class="site-header__sub-links">
-                                                <a href="">LGBTQ+ Weddings</a>
+                                                <a href="<?php echo site_url('category/lgbtq+-weddings') ?>">LGBTQ+ Weddings</a>
                                             </li> 
                                            <li class="site-header__sub-links">
-                                                <a href="">Mature Real Weddings</a>
+                                                <a href="<?php echo site_url('category/mature-real-weddings') ?>">Mature Real Weddings</a>
                                             </li> 
                                            <li class="site-header__sub-links">
-                                                <a href="">Celebrity Weddings</a>
+                                                <a href="<?php echo site_url('category/celebrity-weddings') ?>">Celebrity Weddings</a>
                                             </li> 
                                         </ul>
                                     </div>

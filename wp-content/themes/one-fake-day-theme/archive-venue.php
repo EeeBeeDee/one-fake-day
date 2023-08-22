@@ -20,6 +20,9 @@ get_header();
                                 $mapLocation = get_post_field('venue_location')
                                 ?>
                                 <div data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng'] ?>" class="marker">
+                                <div class="map__imgbox">
+                                    <img class="map__img" src="<?php the_post_thumbnail(); ?>"> 
+                                </div>
                                     <a class="primary-color-dark" href="<?php the_permalink() ?>"><h3><?php the_title() ?></h3></a>
                                     <?php echo $mapLocation['address'] ?>
                                 </div>
