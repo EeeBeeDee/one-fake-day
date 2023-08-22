@@ -519,3 +519,37 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
 }
+
+.venue__title {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 100;
+  line-height: 7rem;
+  margin: 0 10rem 3rem;
+}
+.venue__content {
+  margin: 3rem 10rem;
+}
+.venue__content .btn {
+  margin: 3rem 10rem;
+}
+.venue__img-container {
+  width: 100%;
+  max-height: 40vh;
+  overflow: hidden;
+}
+.venue__img-container img {
+  width: 100%;
+  max-height: 40vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.venue p {
+  font-size: 2rem;
+  word-spacing: 0.5rem;
+  text-align: justify;
+  margin: 0 3rem;
+}
+.venue img {
+  margin: 3rem auto;
+}

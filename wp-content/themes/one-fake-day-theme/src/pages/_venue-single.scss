@@ -1,0 +1,41 @@
+.venue {
+
+    &__title {
+        text-align: center;
+        font-size: 5rem;
+        font-weight: 100;
+        line-height: 7rem;
+        margin: 0 10rem 3rem;
+    }
+
+    &__content {
+        margin: 3rem 10rem;
+
+        & .btn {
+            margin: 3rem 10rem;
+        }
+    }
+
+    &__img-container {
+        width: 100%;
+        max-height: 40vh;
+        overflow: hidden;
+        
+        & img {
+            width: 100%;
+            max-height: 40vh;
+            object-fit: cover;
+        }
+    }
+    
+    & p {
+        font-size: 2rem;
+        word-spacing: 0.5rem;
+        text-align: justify;
+        margin: 0 3rem;
+    }
+
+    & img {
+        margin: 3rem auto;
+    }
+}
