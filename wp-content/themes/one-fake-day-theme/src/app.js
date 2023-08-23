@@ -116,4 +116,43 @@ class GMap {
     } // end center_map
   }
   const googleMap = new GMap()
+
+//  Carousel JS
+
+let carouselIndex = 1
+const carouselFlex = document.getElementById('carousel-flex')
+let imgArr = carouselFlex.querySelectorAll('img')
+const carouselBlurbs = document.querySelectorAll('.carousel__blurb')
+
+const changeCarouselInfobox = () => {
+    carouselBlurbs.forEach(blurb => {
+        blurb.classList.remove('active')
+    })
+    carouselBlurbs[carouselIndex - 1].classList.add('active')
+}
+
+carouselBtnRight.addEventListener('click', () => {
+    if (carouselIndex > carouselFlex.children.length -1) {
+        carouselFlex.style.transform = `translateX(0%)`
+        carouselIndex = 1
+    } else {
+        carouselFlex.style.transform = `translateX(-${carouselIndex * 100}% )`
+        carouselIndex ++
+    }
+
+    changeCarouselInfobox()
+})
+
+carouselBtnLeft.addEventListener('click', () => {
+    if (carouselIndex == 1) {
+        carouselFlex.style.transform = `translateX(-${100 * (carouselFlex.children.length -1)}%)`
+        carouselIndex = carouselFlex.children.length 
+    } else {
+        carouselIndex --
+        carouselFlex.style.transform = `translateX(-${(carouselIndex - 1) * 100}% )`
+    }
+    
+    changeCarouselInfobox()
+
+})
   

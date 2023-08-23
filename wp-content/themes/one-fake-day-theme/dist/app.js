@@ -125,6 +125,39 @@ var GMap = /*#__PURE__*/function () {
 }();
 var googleMap = new GMap();
 
+//  Carousel JS
+
+var carouselIndex = 1;
+var carouselFlex = document.getElementById('carousel-flex');
+var imgArr = carouselFlex.querySelectorAll('img');
+var carouselBlurbs = document.querySelectorAll('.carousel__blurb');
+var changeCarouselInfobox = function changeCarouselInfobox() {
+  carouselBlurbs.forEach(function (blurb) {
+    blurb.classList.remove('active');
+  });
+  carouselBlurbs[carouselIndex - 1].classList.add('active');
+};
+carouselBtnRight.addEventListener('click', function () {
+  if (carouselIndex > carouselFlex.children.length - 1) {
+    carouselFlex.style.transform = "translateX(0%)";
+    carouselIndex = 1;
+  } else {
+    carouselFlex.style.transform = "translateX(-".concat(carouselIndex * 100, "% )");
+    carouselIndex++;
+  }
+  changeCarouselInfobox();
+});
+carouselBtnLeft.addEventListener('click', function () {
+  if (carouselIndex == 1) {
+    carouselFlex.style.transform = "translateX(-".concat(100 * (carouselFlex.children.length - 1), "%)");
+    carouselIndex = carouselFlex.children.length;
+  } else {
+    carouselIndex--;
+    carouselFlex.style.transform = "translateX(-".concat((carouselIndex - 1) * 100, "% )");
+  }
+  changeCarouselInfobox();
+});
+
 /***/ }),
 
 /***/ "./src/app.scss":
