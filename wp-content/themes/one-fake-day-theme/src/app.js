@@ -1,3 +1,5 @@
+// Dropdown menus
+
 const dropdownLinks = document.querySelectorAll('.site-header__dropdown-links')
 const header = document.getElementById('header')
 const dropdown = document.getElementById('dropdown-background')

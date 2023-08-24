@@ -71,7 +71,7 @@ while (have_posts()) {
                         ?>
                         <div data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng'] ?>" class="marker">
                             <div class="map__imgbox">
-                                <img class="map__img" src="<?php the_post_thumbnail(); ?>">
+                                <img class="map__img my-0" src="<?php the_post_thumbnail(); ?>">
                             </div>
                             <a class="primary-color-dark" href="<?php the_permalink() ?>">
                                 <h3><?php the_title() ?></h3>
@@ -92,7 +92,7 @@ while (have_posts()) {
 
 
     </div>
-    <div style="height: 100vh;"></div>
+    
     <?php
 
     get_footer();

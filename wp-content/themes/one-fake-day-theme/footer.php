@@ -1,3 +1,5 @@
+<div style="height: 50vh;"></div>
+
 <footer id="footer" class="site-footer">
     <div class="container h-100">
         <div class="site-footer__flex d-flex flex-column flex-md-row align-items-center  h-100 w-100">
