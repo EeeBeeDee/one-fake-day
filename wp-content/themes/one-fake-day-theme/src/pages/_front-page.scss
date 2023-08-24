@@ -1,8 +1,7 @@
 .ads-logo {
     color: $secondary-color-dark;
     margin-bottom: 4rem;
-    transform: scale(2) translateX(5%);
-    // transform-origin: center ;
+    transform: scale(2) translateX(10%);
     
     & svg {
 
@@ -15,7 +14,16 @@
 
 .ads-container {
     padding: 5rem;
-    margin-left: -7rem;
+    margin: 0;
+
+    @include atMedium {
+        margin-left: -4rem;
+    }
+    
+    @include atXLarge {
+        margin-left: -7rem;
+
+    }
      & img {
         cursor: pointer;
         width: 100%;

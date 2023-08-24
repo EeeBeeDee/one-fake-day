@@ -10,7 +10,7 @@ while (have_posts()) {
                 <?php the_title(); ?>
             </h2>
             <div class="row">
-                <div class="col-9">
+                <div class="col-12 col-lg-9">
                     <div class="venue__content">
                         <div class="venue__img-container mb-5">
                             <img src=<?php echo get_the_post_thumbnail();
@@ -29,10 +29,10 @@ while (have_posts()) {
                                 <img src="https://source.unsplash.com/random/?sky" alt="" id="slide-image">
                             </ul>
                             <div class="carousel__nav-btn carousel__nav-btn--left" id="carousel-left">
-                                <i class="fas fa-chevron-left"></i>
+                                <i class="fa fa-chevron-left"></i>
                             </div>
                             <div class="carousel__nav-btn carousel__nav-btn--right" id="carousel-right">
-                                <i class="fas fa-chevron-right"></i>
+                                <i class="fa fa-chevron-right"></i>
                             </div>
 
                             <div class="carousel__info">
@@ -77,7 +77,7 @@ while (have_posts()) {
                     ?>
                     </div>
                 </div>
-                <div class="col 3">
+                <div class="col 3 d-none d-md-block">
                     <?php get_template_part('template-parts/ads-container') ?>
                 </div>
             </div>

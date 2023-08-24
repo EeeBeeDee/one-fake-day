@@ -9,11 +9,17 @@
     }
 
     &__content {
-        margin: 3rem 10rem;
+        margin: 3rem 0;
+        
+        @include atXLarge {
+            margin: 3rem 10rem;
+        }
 
         & .btn {
             margin: 3rem 10rem;
         }
+
+
     }
 
     &__img-container {

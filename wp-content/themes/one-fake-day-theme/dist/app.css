@@ -117,21 +117,24 @@ a {
 .carousel__container {
   position: relative;
   height: 60vh;
+  min-height: 40rem;
   width: 90%;
-  max-width: 132rem;
   display: flex;
   overflow-x: hidden;
   margin: 0 auto;
-  border-radius: 10px;
+  border-radius: 50px;
 }
 .carousel ul {
   padding: 0;
   margin: 0;
   list-style: none;
   transition: transform 0.8s ease-in-out;
+  overflow: hidden;
 }
 .carousel img {
+  margin: 0 !important;
   min-width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center center;
@@ -142,7 +145,7 @@ a {
   top: 50%;
   transform: translateY(-50%);
   padding: 4rem 1rem;
-  background-color: rgba(221, 221, 221, 0.6);
+  background-color: rgba(170, 170, 170, 0.6);
   cursor: pointer;
 }
 .carousel__nav-btn--right {
@@ -162,37 +165,48 @@ a {
   transform: translateX(-10%) translateY(-50%);
 }
 .carousel__nav-btn > i {
-  color: #4ecca3;
+  color: #34b38a;
   font-size: 3rem;
   opacity: 1;
 }
 .carousel__info {
   display: block;
   width: 100%;
-  height: 8rem;
+  min-height: 12rem;
   position: absolute;
-  bottom: 1rem;
+  bottom: 0;
   right: 0;
   text-align: right;
   overflow: hidden;
 }
-.carousel__info p {
-  margin: 0;
+@media screen and (max-width: 992px) {
+  .carousel__info {
+    display: none;
+  }
+}
+.carousel__info .carousel__blurb p {
+  word-spacing: 0;
+  text-align: right;
+  margin: 1rem 3rem;
 }
 .carousel__blurb {
   position: absolute;
   bottom: 0;
   right: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.8);
   color: #fff;
   text-align: right;
-  transform: translateY(100%);
+  transform: translateY(120%);
   transition: transform 0.8s ease-in-out;
-  padding: 2rem;
 }
 .carousel__blurb.active {
   transform: translateY(0%);
+}
+.carousel__blurb h3 {
+  color: #998100;
+  margin: 1rem 3rem;
+  font-size: 2rem;
 }
 
 .post-card {
@@ -368,6 +382,11 @@ a {
 .site-header__dropdown-menu .container {
   padding: 0 20rem;
 }
+@media screen and (max-width: 1200px) {
+  .site-header__dropdown-menu .container {
+    padding: 0;
+  }
+}
 .site-header__sub-links {
   margin: 2rem 2rem !important;
 }
@@ -527,7 +546,7 @@ a {
 .ads-logo {
   color: #998100;
   margin-bottom: 4rem;
-  transform: scale(2) translateX(5%);
+  transform: scale(2) translateX(10%);
 }
 .ads-logo svg {
   display: block;
@@ -536,7 +555,17 @@ a {
 
 .ads-container {
   padding: 5rem;
-  margin-left: -7rem;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .ads-container {
+    margin-left: -4rem;
+  }
+}
+@media (min-width: 1200px) {
+  .ads-container {
+    margin-left: -7rem;
+  }
 }
 .ads-container img {
   cursor: pointer;
@@ -614,7 +643,12 @@ a {
   margin: 0 10rem 3rem;
 }
 .venue__content {
-  margin: 3rem 10rem;
+  margin: 3rem 0;
+}
+@media (min-width: 1200px) {
+  .venue__content {
+    margin: 3rem 10rem;
+  }
 }
 .venue__content .btn {
   margin: 3rem 10rem;

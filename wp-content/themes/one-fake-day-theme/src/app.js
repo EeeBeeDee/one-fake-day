@@ -119,6 +119,11 @@ class GMap {
 
 //  Carousel JS
 
+// Carousel DOM elements
+const carousel = document.getElementById('carousel')
+const carouselBtnLeft = document.getElementById('carousel-left')
+const carouselBtnRight = document.getElementById('carousel-right')
+
 let carouselIndex = 1
 const carouselFlex = document.getElementById('carousel-flex')
 let imgArr = carouselFlex.querySelectorAll('img')

@@ -127,6 +127,10 @@ var googleMap = new GMap();
 
 //  Carousel JS
 
+// Carousel DOM elements
+var carousel = document.getElementById('carousel');
+var carouselBtnLeft = document.getElementById('carousel-left');
+var carouselBtnRight = document.getElementById('carousel-right');
 var carouselIndex = 1;
 var carouselFlex = document.getElementById('carousel-flex');
 var imgArr = carouselFlex.querySelectorAll('img');
