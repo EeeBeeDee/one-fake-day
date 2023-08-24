@@ -22,9 +22,11 @@ while (have_posts()) {
                         <div class="carousel__container" id="carousel">
 
                             <ul class="d-flex" id="carousel-flex">
-                                <img src="https://source.unsplash.com/random" id="slide-image" alt="">
+                                <?php if (get_field('carousel_image')) { ?>
+                                    <img src="<?php echo get_field('carousel_image', false) ?>" id="slide-image" alt="">
+                                <?php } ?>
+                                <img src="https://source.unsplash.com/random" alt="" id="slide-image">
                                 <img src="https://source.unsplash.com/random/?water" alt="" id="slide-image">
-                                <img src="https://source.unsplash.com/random/?flower" alt="" id="slide-image">
                                 <img src="https://source.unsplash.com/random/?car" alt="" id="slide-image">
                                 <img src="https://source.unsplash.com/random/?sky" alt="" id="slide-image">
                             </ul>
@@ -36,13 +38,16 @@ while (have_posts()) {
                             </div>
 
                             <div class="carousel__info">
-                                <div class="carousel__blurb active">
-                                    <h3>BLAH BLAH</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam atque dolor possimus asperiores, quo dolorum dicta unde voluptate ratione tempora!</p>
-                                </div>
-                                <div class="carousel__blurb">
+                                <?php if (get_field('carousel_heading')) { ?>
+                                    <div class="carousel__blurb active">
+                                        <h3><?php echo get_field('carousel_heading') ?></h3>
+                                        <p><?php echo get_field('carousel_blurb', false) ?></p>
+                                    </div>
+                                <?php } ?>
+                                <div class="carousel__blurb <?php 
+                                if (!get_field('carousel_heading')) echo 'active'; ?>">
                                     <h3>BLAH BLAH 222</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam atque dolor possimus asperiores, quo dolorum dicta unde voluptate ratione tempora!</p>
+                                    <p>If no field group for wedding carousel, it will default to the second pic</p>
                                 </div>
                                 <div class="carousel__blurb">
                                     <h3>BLAH BLAH 333</h3>
@@ -54,7 +59,7 @@ while (have_posts()) {
                                 </div>
                                 <div class="carousel__blurb">
                                     <h3>BLAH BLAH 555</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam atque dolor possimus asperiores, quo dolorum dicta unde voluptate ratione tempora! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam atque dolor possimus asperiores, quo dolorum dicta unde voluptate ratione tempora!</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam atque dolor possimus asperiores, quo dolorum dicta unde voluptate ratione tempora! </p>
                                 </div>
                             </div>
                         </div>

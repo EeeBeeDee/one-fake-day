@@ -13,6 +13,7 @@ get_header();
                     <div class="row">
 
                     <div class="col-12">
+                        <h3 class="text-center mt-5 fs-1">Find venues in an area that suits you or find all our venues listed underneath:</h3>
                         <div class="acf-map my-5 mx-auto">
                         <?php
                             while (have_posts()) {
