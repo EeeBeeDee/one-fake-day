@@ -45,7 +45,7 @@ while (have_posts()) {
                                     </div>
                                 <?php } ?>
                                 <div class="carousel__blurb <?php
-                                                            if (!get_field('carousel_heading')) echo 'active'; ?>">
+                                if (!get_field('carousel_heading')) echo 'active'; ?>">
                                     <h3>BLAH BLAH 222</h3>
                                     <p>If no field group for wedding carousel, it will default to the second pic</p>
                                 </div>
@@ -65,25 +65,26 @@ while (have_posts()) {
                         </div>
                     </div>
 
-                    <div class="held-at__grid">
+                    <div class="held-here__grid">
                         <?php
                         $postCounter = 0;
                         $featuredPosts = get_field('weddings_held');
                         if ($featuredPosts) {
-                            foreach ($featuredPosts as $post) :
-                                setup_postdata($post) ?>
-                                <a class="<?php if ($postCounter == 0 OR $postCounter == 3) echo 'held-at--two-wide' ?>" href="<?php the_permalink(); ?>">
-                                    <div class="held-at " style="background: url(<?php echo get_the_post_thumbnail_url(); ?>) center right/cover no-repeat;">
-                                        <div class="held-at__container">
-                                            <h3> Held here: </h3>
-                                            <h2><?php the_title(); ?></h2>
-                                        </div>
+                            foreach ($featuredPosts as $post) {
+                                if ($postCounter <= 4) {
+                                    setup_postdata($post) ?>
+                                    <a class="<?php if ($postCounter == 0 or $postCounter == 3) echo 'held-here--two-wide' ?>" href="<?php the_permalink(); ?>">
+                                        <div class="held-here " style="background: url(<?php echo get_the_post_thumbnail_url(); ?>) center right/cover no-repeat;">
+                                            <div class="held-here__container">
+                                                <h3> Held here: </h3>
+                                                <h2><?php the_title(); ?></h2>
+                                            </div>
 
-                                    </div>
-                                </a>
-                                
+                                        </div>
+                                    </a>
                         <?php $postCounter++;
-                         endforeach;
+                                }
+                            }
                         }
                         wp_reset_postdata(); ?>
                     </div>

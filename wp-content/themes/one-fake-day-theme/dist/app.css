@@ -209,15 +209,15 @@ a {
   font-size: 2.5rem;
 }
 
-.held-at {
+.held-here {
   width: 100%;
   height: 100%;
   grid-column: auto;
 }
-.held-at--two-wide {
+.held-here--two-wide {
   grid-column: span 2;
 }
-.held-at__grid {
+.held-here__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 15rem;
@@ -225,22 +225,22 @@ a {
   width: 90%;
   margin: 0 auto;
 }
-.held-at__grid a:last-child {
-  grid-column: span auto;
+.held-here__grid a:last-child {
+  grid-column: span 3;
 }
-.held-at__container {
+.held-here__container {
   width: 100%;
   height: 100%;
   background: linear-gradient(to bottom right, #000 0%, #000 10%, transparent);
 }
-.held-at__container h3 {
+.held-here__container h3 {
   display: inline-block;
   color: #998100;
   padding: 2rem 0 1rem 3rem;
   font-size: 3rem;
   border-bottom: 2px #998100 solid;
 }
-.held-at__container h2 {
+.held-here__container h2 {
   padding: 1rem 0 1rem 3rem;
   color: #fff;
   font-weight: 100;
@@ -396,7 +396,7 @@ body.body-logged-in .site-header {
   margin: 1rem 0;
 }
 .site-header__logobox h2 {
-  margin-left: -3rem;
+  margin-left: 0;
   color: #000;
 }
 .site-header__nav {
@@ -491,7 +491,7 @@ body.body-logged-in .site-header {
   position: relative;
 }
 .site-footer__logobox a {
-  transform: scale(2) translate(50%, -50%);
+  transform: scale(2) translate(0);
 }
 .site-footer__nav {
   margin-left: 12rem;
@@ -617,7 +617,7 @@ body.body-logged-in .site-header {
 .ads-logo {
   color: #998100;
   margin-bottom: 4rem;
-  transform: scale(2) translateX(10%);
+  transform: scale(2) translateX(0);
 }
 .ads-logo svg {
   display: block;
