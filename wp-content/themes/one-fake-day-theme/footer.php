@@ -1,8 +1,8 @@
-<div style="height: 50vh;"></div>
+<div class="footer-clearer"></div>
 
 <footer id="footer" class="site-footer">
     <div class="container h-100">
-        <div class="site-footer__flex d-flex flex-column flex-md-row align-items-center  h-100 w-100">
+        <div class="site-footer__flex d-flex flex-column flex-md-row align-items-center justify-content-lg-between  h-100 w-100">
             <div class="site-footer__logobox d-flex align-items-center">
                 <a class="d-flex align-items-center" href="#">
                     <?php get_template_part('template-parts/logo') ?>
@@ -54,7 +54,7 @@
                     <a href="">Hen Parties</a>
                 </li>
             </ul>
-            <ul class="site-footer__social flex-row flex-md-column flex-lg-row">
+            <ul class="site-footer__social flex-row flex-md-column mx-md-auto mx-lg-0  flex-lg-row">
                 <li>
                     <a class="facebook" href="#">
                         <span></span>

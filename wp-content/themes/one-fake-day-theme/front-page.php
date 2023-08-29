@@ -2,7 +2,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-9 px-5"> 
+        <div class="col-12 col-lg-9 px-5"> 
             <div class="row">
                 <?php
 
@@ -15,7 +15,7 @@
                 while ($blogPosts->have_posts()) {
                     $blogPosts->the_post(); 
                     $loopCount++ ?>
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                         <div class="post-card">
                             <a href="<?php the_permalink() ?>">
                                 <img class="post-card__img" src="<?php echo get_the_post_thumbnail(); ?>" alt="">
@@ -50,13 +50,11 @@
                 ?>
             </div>
         </div>
-        <div class="col-3">
+        <div class="d-none d-lg-block col-3">
             <?php get_template_part('template-parts/ads-container') ?>
         </div>
     </div>
 </div>
-
-<div style="height: 50vh;"></div>
 
 
 <?php get_footer(); ?>
