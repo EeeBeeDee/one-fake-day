@@ -72,13 +72,30 @@ a {
   margin: 0 auto;
   margin-bottom: 4rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 768px) {
+  .banner-ad {
+    flex-direction: row;
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .banner-ad {
+    width: 80%;
+  }
 }
 .banner-ad h2 {
   color: white;
   font-size: 2.5rem;
-  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .banner-ad h2 {
+    margin-right: 2rem;
+  }
 }
 .banner-ad--primary {
   background-color: #4ecca3;

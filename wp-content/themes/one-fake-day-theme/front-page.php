@@ -37,7 +37,8 @@
                     ?>
                     <div class="col-12">
                         <div class="banner-ad banner-ad--primary">
-                            <h2>Check out our latest venues</h2>
+                            <h2 class="d-none d-md-block">Check out our latest venues</h2>
+                            <h2 class="d-block d-md-none">Our Latest:</h2>
                             <a href="<?php echo get_post_type_archive_link('venue') ?>" class="btn btn--white">Venues</a>
                         </div>
                     </div>
