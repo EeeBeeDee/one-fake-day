@@ -162,4 +162,43 @@ carouselBtnLeft.addEventListener('click', () => {
     changeCarouselInfobox()
 
 })
+
+// Search functionality 
+
+
+
+// searchBtn.addEventListener('click', (e) => {
+//     dropdown.style.height = '100vh'
+//     console.log('hello')
+// })
+
+class Search {
+    constructor() {
+        this.resultsDiv  = document.querySelector('.search-overlay__results')
+        this.openBtn = document.getElementById('search-btn')
+        this.closeBtn = document.querySelector('.search-overlay__close')
+        this.searchOverlay = document.querySelector('.search-overlay')
+        this.events()
+    }
+
+    events() {
+        this.openBtn.addEventListener('click', this.openOverlay.bind(this))
+        this.closeBtn.addEventListener('click', this.closeOverlay.bind(this))
+    }
+
+    openOverlay() {
+        dropdown.style.height = '100vh'
+        this.searchOverlay.classList.add('search-overlay--active')
+        console.log('hello')
+    }
+    
+    closeOverlay() {
+        dropdown.style.height = 0
+        this.searchOverlay.classList.remove('search-overlay--active')
+
+    }
+
+}
+
+const search = new Search()
   

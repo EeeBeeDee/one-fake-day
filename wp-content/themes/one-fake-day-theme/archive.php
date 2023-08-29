@@ -39,7 +39,7 @@ get_header();
                                     <div class="col-12">
                                         <div class="banner-ad banner-ad--primary">
                                             <h2>Check out our latest venues</h2>
-                                            <button class="btn btn--white">Venues</button>
+                                            <a href="<?php echo get_post_type_archive_link('venue') ?>" class="btn btn--white">Venues</a>
                                         </div>
                                     </div>
                             <?php }

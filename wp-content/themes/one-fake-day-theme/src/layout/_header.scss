@@ -62,8 +62,8 @@ body.body-logged-in .site-header {top: 32px !important;}
     &__dropdown {
         background-color: $off-white;
         height: 0;
-        width: 200vw;
-        margin-left: -50vw;
+        // width: 100vw;
+        // margin-left: -50vw;
         transition: all 0.3s ease-in-out;
     
         &.active {

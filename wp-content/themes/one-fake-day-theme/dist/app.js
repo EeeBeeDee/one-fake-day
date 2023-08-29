@@ -164,6 +164,45 @@ carouselBtnLeft.addEventListener('click', function () {
   changeCarouselInfobox();
 });
 
+// Search functionality 
+
+// searchBtn.addEventListener('click', (e) => {
+//     dropdown.style.height = '100vh'
+//     console.log('hello')
+// })
+var Search = /*#__PURE__*/function () {
+  function Search() {
+    _classCallCheck(this, Search);
+    this.resultsDiv = document.querySelector('.search-overlay__results');
+    this.openBtn = document.getElementById('search-btn');
+    this.closeBtn = document.querySelector('.search-overlay__close');
+    this.searchOverlay = document.querySelector('.search-overlay');
+    this.events();
+  }
+  _createClass(Search, [{
+    key: "events",
+    value: function events() {
+      this.openBtn.addEventListener('click', this.openOverlay.bind(this));
+      this.closeBtn.addEventListener('click', this.closeOverlay.bind(this));
+    }
+  }, {
+    key: "openOverlay",
+    value: function openOverlay() {
+      dropdown.style.height = '100vh';
+      this.searchOverlay.classList.add('search-overlay--active');
+      console.log('hello');
+    }
+  }, {
+    key: "closeOverlay",
+    value: function closeOverlay() {
+      dropdown.style.height = 0;
+      this.searchOverlay.classList.remove('search-overlay--active');
+    }
+  }]);
+  return Search;
+}();
+var search = new Search();
+
 /***/ }),
 
 /***/ "./src/app.scss":

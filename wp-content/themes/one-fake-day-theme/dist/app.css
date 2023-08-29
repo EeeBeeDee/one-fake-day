@@ -363,6 +363,39 @@ a {
   color: #998100;
 }
 
+.search-overlay {
+  position: relative;
+  margin: 0 -100rem;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.search-overlay--active {
+  visibility: visible;
+}
+.search-overlay__icon {
+  color: #34b38a;
+  font-size: 4rem;
+  margin-right: 4rem;
+}
+.search-overlay__term {
+  border: none;
+  width: 80%;
+  background-color: transparent;
+  padding: 2rem 0;
+  font-size: 4rem;
+  outline: none;
+  color: #34b38a;
+}
+.search-overlay__close {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-right: 3rem;
+  font-size: 4rem;
+  color: #34b38a;
+  transform: translateY(-50%);
+}
 .venue-card {
   position: relative;
   margin: 0 4rem 4rem;
@@ -462,8 +495,6 @@ body.body-logged-in .site-header {
 .site-header__dropdown {
   background-color: #FFFCE5;
   height: 0;
-  width: 200vw;
-  margin-left: -50vw;
   transition: all 0.3s ease-in-out;
 }
 .site-header__dropdown.active {

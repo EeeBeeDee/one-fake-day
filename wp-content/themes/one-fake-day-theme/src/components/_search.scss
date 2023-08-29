@@ -1,0 +1,44 @@
+.search-overlay {
+    position: relative;
+    margin: 0 -100rem;
+    // height: 0;
+    visibility: hidden;
+    // width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    // margin: 0 auto;
+
+    &--active {
+        visibility: visible;
+    }
+
+    &__icon {
+        color: $primary-color-dark;
+        font-size: 4rem;
+        margin-right: 4rem;
+    }
+
+    &__term {
+        border: none;
+        width: 80%;
+        background-color: transparent;
+        padding: 2rem 0;
+        font-size: 4rem;
+        outline: none;
+        color: $primary-color-dark;
+    }
+
+    &__close {
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-right: 3rem;
+        font-size: 4rem;
+        color: $primary-color-dark;
+        transform: translateY(-50%);
+    }
+
+    &__results {
+
+    }
+}
