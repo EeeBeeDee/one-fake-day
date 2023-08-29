@@ -44,8 +44,8 @@ while (have_posts()) {
                                         <p><?php echo get_field('carousel_blurb', false) ?></p>
                                     </div>
                                 <?php } ?>
-                                <div class="carousel__blurb <?php 
-                                if (!get_field('carousel_heading')) echo 'active'; ?>">
+                                <div class="carousel__blurb <?php
+                                                            if (!get_field('carousel_heading')) echo 'active'; ?>">
                                     <h3>BLAH BLAH 222</h3>
                                     <p>If no field group for wedding carousel, it will default to the second pic</p>
                                 </div>
@@ -63,6 +63,29 @@ while (have_posts()) {
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="held-at__grid">
+                        <?php
+                        $postCounter = 0;
+                        $featuredPosts = get_field('weddings_held');
+                        if ($featuredPosts) {
+                            foreach ($featuredPosts as $post) :
+                                setup_postdata($post) ?>
+                                <a class="<?php if ($postCounter == 0 OR $postCounter == 3) echo 'held-at--two-wide' ?>" href="<?php the_permalink(); ?>">
+                                    <div class="held-at " style="background: url(<?php echo get_the_post_thumbnail_url(); ?>) center right/cover no-repeat;">
+                                        <div class="held-at__container">
+                                            <h3> Held here: </h3>
+                                            <h2><?php the_title(); ?></h2>
+                                        </div>
+
+                                    </div>
+                                </a>
+                                
+                        <?php $postCounter++;
+                         endforeach;
+                        }
+                        wp_reset_postdata(); ?>
                     </div>
 
                     <div class="acf-map my-5 mx-auto">
@@ -92,7 +115,7 @@ while (have_posts()) {
 
 
     </div>
-    
+
     <?php
 
     get_footer();

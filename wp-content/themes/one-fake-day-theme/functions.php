@@ -40,6 +40,8 @@
     
     add_filter( 'get_the_archive_title', 'my_theme_archive_title' );
 
+    // Google Maps API 
+
     function university_map_key($api) {
         $api['key'] = 'AIzaSyAUAki-fcJ5ncnATvqGrybpLmXGxkmrJwI';
     
@@ -47,5 +49,16 @@
     }
     
     add_filter('acf/fields/google_map/api', 'university_map_key');
+
+    // Add margin to the body if user is logged in to get wp admin bar out of the way.
+
+    function add_body_class($classes){
+        if(is_user_logged_in()) {
+            $classes[] = 'body-logged-in';
+        }
+        return $classes;
+    }
+
+    add_filter('body_class', 'add_body_class')
 ?>
 
